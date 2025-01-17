@@ -1,0 +1,7 @@
+500000.0 COP es igual a 116.42 USD
+800.0 USD es igual a 777.04 EUR
+1000.0 PEN es igual a 1139562.13 COP
+1.0 PEN es igual a 1139.56 COP
+1.0 BRL es igual a 0.17 USD
+1420000.0 COP es igual a 330.64 USD
+1000.0 USD es igual a 4294667.80 COP
