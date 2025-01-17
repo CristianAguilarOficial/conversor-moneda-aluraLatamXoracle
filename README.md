@@ -1,23 +1,36 @@
-**Conversor de Monedas**
+# Conversor de Monedas
 
 Este proyecto es una aplicación de consola en Java que permite realizar conversiones entre diferentes monedas utilizando tasas de cambio obtenidas de una API externa.
 
-**Funcionalidades**
+## Funcionalidades
 
-Obtener tasas de cambio:
+1. **Obtener tasas de cambio:**
+   - Conexión a la API `https://v6.exchangerate-api.com/v6/MY+KEY/latest/USD` para obtener las tasas de cambio en tiempo real.
 
-## Conexión a la API https://v6.exchangerate-api.com/v6/c38ac1172ee899b95f179c4c/latest/USD para obtener las tasas de cambio en tiempo real. ## 
+2. **Conversión de monedas:**
+   - El usuario puede seleccionar una moneda de origen, una moneda de destino y el monto a convertir.
+   - Realiza el cálculo basado en las tasas de cambio obtenidas de la API.
 
--Conversión de monedas:
+3. **Historial de conversiones:**
+   - Guarda un registro de cada conversión realizada en un archivo de texto llamado `historial_conversiones.txt`.
 
-El usuario puede seleccionar una moneda de origen, una moneda de destino y el monto a convertir.
+4. **Interfaz amigable:**
+   - Presenta un menú claro para la selección de monedas y permite repetir el proceso de conversión según las necesidades del usuario.
 
-Realiza el cálculo basado en las tasas de cambio obtenidas de la API.
+## Estructura del Proyecto
 
--Historial de conversiones:
+El proyecto está dividido en dos clases principales:
 
-Guarda un registro de cada conversión realizada en un archivo de texto llamado historial_conversiones.txt.
+### 1. Clase `GestorTasasCambio`
+Encargada de gestionar la conexión con la API y obtener las tasas de cambio.
 
-Interfaz amigable:
+**Métodos principales:**
+- `public static JsonObject obtenerTasasDeCambio()`
+  - Realiza una conexión HTTP con la API.
+  - Parsea la respuesta en formato JSON para obtener las tasas de cambio.
+  - Retorna un objeto `JsonObject` con las tasas de cambio disponibles.
 
-Presenta un menú claro para la selección de monedas y permite repetir el proceso de conversión según las necesidades del usuario.
+**Configuración adicional:**
+Descargar la biblioteca Gson 2.11.0
+API utilizada: https://app.exchangerate-api.com/
+
