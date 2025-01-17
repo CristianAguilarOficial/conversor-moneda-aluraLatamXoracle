@@ -18,6 +18,6 @@ Este proyecto es una aplicación de consola en Java que permite realizar convers
    - Presenta un menú claro para la selección de monedas y permite repetir el proceso de conversión según las necesidades del usuario.
 
 ## Configuración adicional
-**Descargar la biblioteca Gson 2.11.0**
-**API utilizada: https://app.exchangerate-api.com/**
+-**Descargar la biblioteca Gson 2.11.0**
+-**API utilizada: https://app.exchangerate-api.com/**
 
