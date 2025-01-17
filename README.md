@@ -17,20 +17,7 @@ Este proyecto es una aplicación de consola en Java que permite realizar convers
 4. **Interfaz amigable:**
    - Presenta un menú claro para la selección de monedas y permite repetir el proceso de conversión según las necesidades del usuario.
 
-## Estructura del Proyecto
-
-El proyecto está dividido en dos clases principales:
-
-### 1. Clase `GestorTasasCambio`
-Encargada de gestionar la conexión con la API y obtener las tasas de cambio.
-
-**Métodos principales:**
-- `public static JsonObject obtenerTasasDeCambio()`
-  - Realiza una conexión HTTP con la API.
-  - Parsea la respuesta en formato JSON para obtener las tasas de cambio.
-  - Retorna un objeto `JsonObject` con las tasas de cambio disponibles.
-
-**Configuración adicional:**
-Descargar la biblioteca Gson 2.11.0
-API utilizada: https://app.exchangerate-api.com/
+## Configuración adicional
+**Descargar la biblioteca Gson 2.11.0**
+**API utilizada: https://app.exchangerate-api.com/**
 
