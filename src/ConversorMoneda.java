@@ -77,6 +77,7 @@ public class ConversorMoneda {
 
         while (continuar) {
             // Mostrar las monedas disponibles solo la primera vez
+            System.out.println("--------------------------------------------------");
             System.out.println("Monedas disponibles:");
             tasasFiltradas.forEach((codigo, tasa) -> {
                 String nombreMoneda = Monedas.obtenerNombreMoneda(codigo);
@@ -84,13 +85,15 @@ public class ConversorMoneda {
             });
 
             // Pedir al usuario la moneda de origen
+            System.out.println("--------------------------------------------------");
             System.out.print("Elige la moneda de origen (por ejemplo, COP): ");
             String monedaOrigen = scanner.nextLine().toUpperCase();
+            System.out.println("--------------------------------------------------");
 
             // Pedir al usuario la moneda de destino
             System.out.print("Elige la moneda de destino (por ejemplo, USD): ");
             String monedaDestino = scanner.nextLine().toUpperCase();
-
+            System.out.println("--------------------------------------------------");
             // Verificar que ambas monedas existen
             if (!tasasFiltradas.containsKey(monedaOrigen) || !tasasFiltradas.containsKey(monedaDestino)) {
                 System.out.println("Una o ambas monedas no están disponibles.");

@@ -5,3 +5,4 @@
 1.0 BRL es igual a 0.17 USD
 1420000.0 COP es igual a 330.64 USD
 1000.0 USD es igual a 4294667.80 COP
+2000000.0 COP es igual a 465.69 USD
